@@ -10,3 +10,5 @@ https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=22c1fbac3b
 
 ![alt text](image.png)
 
+## Update Email
+![alt text](image-2.png)
