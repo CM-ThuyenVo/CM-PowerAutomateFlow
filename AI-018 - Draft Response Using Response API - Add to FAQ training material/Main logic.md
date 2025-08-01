@@ -21,7 +21,7 @@
 
 8. Post-Approval:
     Asks if the approved response should be added to the FAQ.
-    If yes, create a new FAQ entry in SharePoint and notify the user.
+    If yes, create a new FAQ entry in SharePoint and notify the user. Including the Score of the Answer.
     If no, send a notification email.
 
 <img width="607" height="792" alt="image" src="https://github.com/user-attachments/assets/3300f3bb-afd2-42a9-95dd-a303d0b0389d" />

@@ -59,3 +59,49 @@ concat(
   'Email content:\n', variables('CleanEmailContent')
   
 )
+
+## Prompt tạo câu hỏi để ghi vào FAQ
+
+You are an AI assistant. Based on the approved message content from @{body('Read_Email_and_Compose_Draft_Response')['output'][1]['content'][0]['text']}, generate a list of frequently asked questions (FAQs) focused on technical or product-related topics.
+
+Exclude questions that are general, administrative, or operational in nature (e.g., scheduling meetings, offering to call, or personal follow-ups).
+Do not include personal names in either the questions or responses.
+Preserve the original technical content and context as much as possible.
+For each generated response, include a score from 0 to 1 that reflects how closely the response matches the approved message content (1 = exact match, 0 = unrelated).
+Format the output in JSON with the following fields:
+
+Title: A short, descriptive title for the FAQ item.
+Question: A concise, clear question derived from the content.
+Response: A detailed, accurate answer based on the approved message.
+Score: A float between 0 and 1 indicating how closely the response aligns with the approved content.
+
+### Schema parse json:
+
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "Title": {
+                "type": "string"
+            },
+            "Question": {
+                "type": "string"
+            },
+            "Response": {
+                "type": "string"
+            },
+            "Score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+            }
+        },
+        "required": [
+            "Title",
+            "Question",
+            "Response",
+            "Score"
+        ]
+    }
+}
