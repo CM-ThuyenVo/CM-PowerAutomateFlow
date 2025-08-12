@@ -1,7 +1,7 @@
 # AI-019- Monitor Talents Mail - Extract data CV with Skill and Experience - Update Interview Tracker
 
 ## Trigger: 
-The flow starts when a new email with attachments arrives in the shared mailbox "**talents@cpa-cm.com**".
+The flow starts when a new email **with attachments** arrives in the shared mailbox "**talents@cpa-cm.com**".
 
 ### Sender Check: 
 It checks if the sender is an internal team member. If not, it sets the sender email to a default address.
