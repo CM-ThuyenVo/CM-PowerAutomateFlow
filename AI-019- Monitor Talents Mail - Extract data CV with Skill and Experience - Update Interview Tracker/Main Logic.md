@@ -20,7 +20,9 @@ It then collects interview details, including:
 
 ![alt text](image.png)
 
-### SharePoint Update: 
+If you click Cancel, the flow will stop. If you click Submit it will continue to create the interview tracker.
+
+### SharePoint Interview Tracker Update: 
 The flow creates an item in the Interview Tracker SharePoint list with all collected information and attaches the PDF.
 
 ### Notification: 
