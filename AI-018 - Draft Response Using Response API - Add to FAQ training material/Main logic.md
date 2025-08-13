@@ -16,16 +16,17 @@
     Sends the draft for user approval.
     If not approved, allows for comments and re-drafting, repeating until approved or a limit is reached.
    
-<img width="527" height="700" alt="image" src="https://github.com/user-attachments/assets/3233c374-5410-4ba3-adc8-0ca6b49791ba" />
+![alt text](image.png)
+
+If the responses is Reject the verify if you want to redo with the comments or cancel the progress.
+
+![alt text](image-1.png)
 
 
 8. Post-Approval:
-    Asks if the approved response should be added to the FAQ.
-    If yes, create a new FAQ entry in SharePoint and notify the user. Including the Score of the Answer.
-    If no, send a notification email.
-
-<img width="607" height="792" alt="image" src="https://github.com/user-attachments/assets/3300f3bb-afd2-42a9-95dd-a303d0b0389d" />
-
+    If the responses is approved, create a new FAQ entries in SharePoint and notify the user. Including the Score of the Answer.
+    
+![alt text](image-2.png)
 
 9. Error Handling: Sends notifications if any step fails.
 
