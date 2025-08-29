@@ -12,13 +12,20 @@ For each attachment, it checks if the file is a PDF, JPG, PNG and size > 31KB (i
     If it’s a PDF, JPG, PNG file, the flow uses AI Builder to extract candidate information and summarize skills/experience.
 ### Interview Card: 
 The flow posts an adaptive card to Microsoft Teams, displaying the candidate’s full name, email, phone, and a summary of skills/experiences. 
+
+**You can edit the information before final submit.**
+
 It then collects interview details, including:
 * Department (TAX or AUD)
 * Position (e.g., Tax Intern, Audit Manager, etc.)
 * Interview Type (Virtual, In-person, etc.)
 * Interview Date and Time
 
-![alt text](image.png)
+![alt text](image-8.png)
+
+**_If you don't have the interview agenda, you can keep the default setting and adjust them later in the tracker_**
+
+![alt text](image-9.png)
 
 If you click Cancel, the flow will stop. If you click Submit it will continue to create the interview tracker.
 
